@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #00eaff;
+  letter-spacing: 2px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 18px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.cell {
+  width: 110px;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  border: 2px solid transparent;
+}
+
+.cell:hover {
+  border: 2px solid #00eaff;
+  transform: scale(1.05);
+}
+
+.cell.X {
+  color: #ff4b91;
+  text-shadow: 0 0 15px #ff4b91;
+}
+
+.cell.O {
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+button {
+  padding: 12px 35px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #00eaff, #8ef7ff);
+  color: #0a0a0a;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #00c8ff, #a0faff);
+  transform: translateY(-2px);
+}
